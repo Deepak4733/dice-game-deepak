@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(245, 215, 233);
+        }
+        
+        #click {
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 3px;
+            margin-top: 161px;
+            margin-left: 559px;
+            position: absolute;
+            /* background-color: rgb(240, 18, 151); */
+            background-color: rgb(27, 8, 197);
+            color: rgb(255, 255, 255);
+            /* width: 114px;
+            height: 62px; */
+        }
+        
+        .a2 {
+            font-size: 20px;
+            font-weight: bold;
+            /* color: rgb(245, 120, 3); */
+            color: rgb(7, 196, 54);
+            margin-top: 0px;
+            margin-left: 283px;
+        }
+        
+        .a3 {
+            margin-top: 121px;
+            margin-left: -28px;
+        }
+        
+        #demo {
+            font-size: 80px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 2px;
+            text-align: center;
+            color: rgb(245, 7, 7);
+            margin-top: -46px;
+            margin-left: -20px;
+        }
+        
+        #demo2 {
+            font-size: 80px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 2px;
+            text-align: center;
+            color: rgb(245, 7, 7);
+            margin-top: -46px;
+            margin-left: -25px;
+        }
+        
+        #demo3 {
+            font-size: 35px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 2px;
+            margin-top: -201px;
+            margin-left: 472px
+        }
+        
+        .img11 {
+            width: 80px;
+            height: 80px;
+            padding: 50px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: #c5c3eb;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 63px;
+            margin-left: 463px;
+        }
+        
+        .img12 {
+            width: 80px;
+            height: 80px;
+            padding: 50px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: #c5c3eb;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: -122px;
+            margin-left: 678px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="a2">
+        <h1>DICE GAME with JavaScript</h1>
+    </div>
+    <hr>
+
+    <div class="a3">
+
+
+        <div class="img11">
+
+            <p id="demo">
+
+            </p>
+        </div>
+        <br>
+
+        <div class="img12">
+
+            <p id="demo2">
+
+            </p>
+        </div>
+        <br>
+
+
+        <p id="demo3"></p>
+        <br>
+
+
+        <br>
+
+        <button id="click">Dice Roll </button>
+
+    </div>
+    <br>
+
+    <script>
+        var x, y;
+        demo3.style.color = " #dd7e01";
+
+
+        document.getElementById("click").onclick = function() {
+            x = document.getElementById("demo").innerHTML = Math.floor(Math.random() * 6) + 1;
+            y = document.getElementById("demo2").innerHTML = Math.floor(Math.random() * 6) + 1;
+            if (x > y) {
+                x = document.getElementById("demo3").innerHTML = " Left Dice - WINNER";
+            } else if (x == y) {
+                x = document.getElementById("demo3").innerHTML = " Match   Draw.....!";
+            } else {
+                x = document.getElementById("demo3").innerHTML = " Left Dice - LOOSER";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
